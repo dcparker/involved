@@ -1,0 +1,95 @@
+div#Inbox {
+  display:block;
+  position:absolute;
+  top:60px;
+  left:150px;
+  width:800px;
+  height:200px;
+}
+
+div#Today {
+  display:block;
+  position:absolute;
+  top:300px;
+  left:150px;
+  width:800px;
+  height:180px;
+}
+
+ul.inbox {
+  padding:0 1em 0 0;
+}
+
+ul.inbox li, ul.inbox span {
+  display:block;
+  float:left;
+}
+ul.inbox li {
+  clear:left;
+  width:100%;
+  border-bottom:1px solid #dedede;
+  padding:2px;
+  padding-left:10px;
+}
+ul.inbox span {
+  margin-right:1em;
+}
+
+/** listing colors **/
+ul.inbox li.email {
+  background-color:#f2f2ff;
+}
+ul.inbox li.task {
+  background-color:#efefef;
+}
+ul.inbox li.appointment {
+  background-color:#fff2f2;
+  color:#800;
+}
+
+span.task {
+  font-style:italic;
+  font-size:10pt;
+  width:30px;
+}
+span.due.date {
+  width:150px;
+}
+span.from {
+  width:150px;
+}
+span.scheduled.date {
+  width:55px;
+}
+
+span.due.date:before {
+  content:'Due ';
+}
+
+span.label {
+  padding:1px 8px 2px;
+  margin:0 2px;
+  font-size:13px;
+  -webkit-border-radius:10px;
+  -firefox-border-radius:10px;
+  background-color:#888;
+  border:1px solid #555;
+  color:#fcfcfc;
+  cursor:pointer;
+}
+
+span.label.tasks {
+  background-color:#f2f2f2;
+  border:1px solid #ddd;
+  color:#555;
+}
+span.label.appointments {
+  background-color:#fff2f2;
+  border:1px solid #fcc;
+  color:#800;
+}
+span.label.emails {
+  background-color:#f2f2ff;
+  border:1px solid #ccf;
+  color:#2b2b88;
+}
